@@ -21,7 +21,7 @@ cout <<"최대로 살 수 있는 아이스크림의 개수="<<n_icecream <<endl;
 
 int change = money % icecream_price;
 
-cout <<"아이스크림 구입 후 남은 돈="<<change <<endl;
+cout <<"아이스크림 구매 후 남은 돈="<<change <<endl;
 
 return 0;
 }

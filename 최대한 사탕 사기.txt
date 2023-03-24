@@ -9,19 +9,26 @@ int main() {
 
 int money;
 int icecream_price;
+int choco_price;
 
 cout <<"현재 가지고 있는 돈:";
 cin >>money;
 cout <<"아이스크림의 가격:";
 cin >>icecream_price;
+cout << "초콜렛의 가격: ";
+cin >> choco_price;
 
-int n_icecream = money / icecream_price;
+int n_icecream = (money/2) / icecream_price;
+int n_choco = (money/2) / choco_price;
 
-cout <<"최대로 살 수 있는 아이스크림의 개수="<<n_icecream <<endl;
+cout <<"절반의 돈으로 최대로 살 수 있는 아이스크림의 개수 = " << n_icecream << endl;
+cout <<"절반의 돈으로 최대로 살 수 있는 초콜렛의 개수 = ' << n_choco << endl;
 
-int change = money % icecream_price;
+int ice_change = (money/2) % icecream_price;
+int choco_change = (money/2) % choco_price;
+int TotalChange = ice_charge + choco_charge;
 
-cout <<"아이스크림 구입 후 남은 돈="<<change <<endl;
+cout <<"아이스크림과 초콜렛을 구입한 후 남은 돈="<< TotalChange <<endl;
 
 return 0;
 }

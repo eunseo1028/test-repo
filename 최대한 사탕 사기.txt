@@ -28,9 +28,11 @@ int ice_change = (money/2) % icecream_price;
 int choco_change = (money/2) % choco_price;
 int TotalChange = ice_charge + choco_charge;
 
+cout <<"아이스크림 구매 후 남은 돈="<<change <<endl;
+=======
 cout <<"아이스크림과 초콜렛을 구입한 후 남은 돈="<< TotalChange <<endl;
 
-cout << 부드럽고 달고~;
+cout << "부드럽고 달고~";
 
 return 0;
 
